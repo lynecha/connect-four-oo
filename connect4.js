@@ -12,6 +12,8 @@ class Game {
     this.boardWidth = width;
     this.currPlayer = 1;
     this.board = [];
+    this.makeBoard();
+    this.makeHtmlBoard();
   }
 
   makeBoard() {
@@ -141,9 +143,5 @@ class Game {
         this.board[y][x] === this.currPlayer
     );
   }
-
 }
-
 let connect = new Game(6,7);
-connect.makeBoard();
-connect.makeHtmlBoard();
